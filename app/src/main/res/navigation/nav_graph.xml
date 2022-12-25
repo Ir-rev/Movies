@@ -14,14 +14,15 @@
             android:id="@+id/action_genresFragment_to_movieInfoFragment"
             app:destination="@id/movieInfoFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/movieInfoFragment"
         android:name="com.example.movies.ui.moviesInfoFragment.MovieInfoFragment"
         android:label="MovieInfoFragment"
         tools:layout="@layout/movie_info_fragment">
         <argument
-            android:name="classForTest"
-            app:argType="com.example.movies.ui.ClassForTest"/>
+            android:name="film"
+            app:argType="com.example.movies.response.Film"/>
     </fragment>
 
 </navigation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/movie_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@tools:sample/avatars"/>
+
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="156dp"
+            android:layout_height="27dp"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/movie_image"
+            app:layout_constraintEnd_toEndOf="@+id/movie_image"
+            app:layout_constraintStart_toStartOf="@+id/movie_image"
+            tools:text="TextView"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

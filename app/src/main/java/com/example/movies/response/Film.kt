@@ -1,5 +1,9 @@
 package com.example.movies.response
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 data class Film(
     val description: String,
     val genres: List<String>,
@@ -9,4 +13,6 @@ data class Film(
     val name: String,
     val rating: Double,
     val year: Int
-)
+) : Parcelable {
+    var onClick: () -> Unit = {}
+}
